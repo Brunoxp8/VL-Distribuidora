@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>VL Transportadora </title>
+        <link rel="icon" type="image/png" href="./inter/src/imagens/logo.png">
+
+        <link rel="stylesheet" href="./inter/src/css/reset.css">
+        <link rel="stylesheet" href="./inter/src/css/responsivo.css">
+        <link rel="stylesheet" href="./inter/src/css/estilo.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&family=Young+Serif&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&family=Young+Serif&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&family=Young+Serif&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <main class="principal">
+            
+            <div class="pagina">
+                
+                <img class="fundo" src="./inter/src/imagens/fundo.png" alt="">
+
+                <div class="marca">
+
+                    <h1 class="nomevl">VL transportadora</h1>
+
+                    <i class="logo"></i>
+
+                </div>
+
+                <div class="detalhes pg" >
+                
+                    <h2 class="pg"> Norma de pagamento:</h2>
+
+                    <h4 class="conteudo"> 
+                        
+                        .empresa trabalha com alguns tipo de pagamento como dinheiro a cartão de crédito ou débito Pix.
+                    
+                    </h4>
+
+                    <h2 class="detalhes empresa"> Sobre a Distribuidora </h2>
+
+                    <h4 class="conteudo e">
+                        Pedimos para nosso cliente contar sobre como chegou nesse mercado e um pouco da história dele, então nós foi dito que:
+                        “Quando eu fui demitida do onde eu travava fiquei sem saber o que fazer da vida, mesmo com certificação em administração não fui chamada em nem uma das empresas que enviei meus currículos, daí então resolvi abrir uma distribuidora de água mineral pra mim, como eu já estava no ramo assim fiz. No começo foi bem difícil porque não tinha clientes aí passava o dia todo sem conseguir vender nada, mas dois meses depois consegui começar a vender, ainda não é uma quantidade boa, mas continuo trabalhando até chegar a ter boas vendas.”
+                    </h4>
+                </div>
+
+                <div class="detalhes h">
+
+                    <h2 class="h">  Horario de atendimento:<h2>
+                    
+                    <h4 class="conteudo">
+                        
+                        . Nós atendemos de 08:00 até 17:00 horas
+                        
+                    </h4>
+                
+                </div>
+            </div>
+            
+            <div class="pagina">
+                
+                <img class="fundo" src="./inter/src/imagens/cadastra-export.png" alt="">
+
+                <div class="marca">
+
+                    <h1 class="nomevl">VL transportadora</h1>
+
+                    <i class="logo">
+                        <img src="./inter/src/imagens/logo.png" alt="">
+                    </i>
+
+                </div>
+
+                <div class="detalhes pg">
+
+                    <h2 class="cadast"> cadastre-se</h2>
+
+                    <h4 class="info"> 
+                        
+                        Seja bem-vindo ao da site da <br>VL distribuidora, mas para você fazer seus pedidos você presisa se cadastrar, então por favor informe
+                    </h4>
+
+                    <h1 class="cadastrar">
+
+                        <form id="cadastroForm">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" required><br><br>
+                    
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required><br><br>
+                    
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" required><br><br>
+                    
+                            <button type="submit">Cadastrar</button>
+                        </form>
+                
+                        <div id="mensagem"></div>
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <div class="pagina selecionado">
+                
+                <img class="fundo" src="./inter/src/imagens/cadastra-export.png" alt="">
+
+                <div class="marca">
+
+                    <h1 class="nomevl">VL transportadora</h1>
+
+                    <i class="logo"></i>
+
+                </div>
+
+                <div class="detalhes pg" >
+                
+                    <h2 class="Login"> Login </h2>
+
+
+                    <h4 class="inf">
+                        
+                        Muito obrigado por se cadastrar no site, agora vc pode fazer seus pedidos no conforto da sua casa, basta você logar e ter acesso a todos os recursos do nosso site
+                    
+                    </h4>
+
+                    <h1 >
+                        <form id="loginForm">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required><br><br>
+                    
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" required><br><br>
+                    
+                            <button type="submit">Entrar</button>
+                        </form>
+
+                        <script>
+                            const form = document.getElementById('loginForm');
+                            const mensagem = document.getElementById('mensagem');
+
+                            // Simule uma lista de credenciais válidas (em um ambiente real, você usaria um backend para verificar as credenciais)
+                            const usuariosValidos = 
+                            [
+                                { email: 'usuario1@example.com', senha: 'senha123' },
+                                { email: 'usuario2@example.com', senha: 'senha456' }
+                            ];
+
+                            // Adicione um ouvinte de evento para o envio do formulário
+                            form.addEventListener('submit', function (event)
+                            {
+                                event.preventDefault();
+
+                                // Obtenha os valores do formulário
+                                const email = document.getElementById('email').value;
+                                const senha = document.getElementById('senha').value;
+
+                                // Verifique as credenciais
+                                const usuarioValido = usuariosValidos.find(usuario => usuario.email === email && usuario.senha === senha);
+
+                                if (usuarioValido) 
+                                {
+                                    mensagem.textContent = "Login bem-sucedido! Redirecionando...";
+                                    // Aqui você pode redirecionar o usuário para a página desejada
+                                    window.location.href = 'pagina-de-boas-vindas.html';
+                                } else 
+                                {
+                                    mensagem.textContent = "Credenciais inválidas. Tente novamente.";
+                                }
+                            });
+                        </script>
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <div class="pagina">
+
+                <div class="marca">
+            
+                    <img class="fundo" src="./inter/src/imagens/fundo.png" alt="">
+            
+                    <div class="marca">
+            
+                    <h1 class="nomevl">VL transportadora</h1>
+            
+                    <i class="logo"></i>
+            
+                </div>
+                
+                <div class="detalhes pg">
+                    
+                    <h1 class="Login">gestão do estoque</h1>
+            
+                    <h4 class="inf g">nessa ária somente a administradora tera visualização </h4>
+            
+                </div>
+                </div>
+            
+                <div class="tabela">
+                
+                    <table>
+                        <tr>
+                          <td class="undd">id</td>
+                          <td class="undd">nome</td>
+                          <td class="undd">preço</td>
+                        </tr>
+                        <tr>
+                          <td class="undd">001</td>
+                          <td class="undd">garrafão de água</td>
+                          <td class="undd"> &real; 25,00</td>
+                        </tr>
+
+                        <tr>
+                            
+                            <td>lucro</td>
+                            
+                        </tr>
+
+                    </table>
+            
+                </div>
+                
+            </div>
+
+            <div class="pagina"> 
+                
+                <div class="marca">
+            
+                    <img class="fundo" src="./inter/src/imagens/fundo.png" alt="">
+            
+                    <div class="marca">
+            
+                    <h1 class="nomevl">VL transportadora</h1>
+            
+                </div>
+
+                <div class="prod">
+                    produtos
+                </div>
+
+                <a class="link" href="https://www.instagram.com/vldistribuidora2023/">
+                    click aqui
+                </a>
+
+                <p class="texto">E nos acompanhe nas nossas redes sociais</p>
+
+            </div>
+
+        </main>
+
+        <ul class="botoes">
+            
+            <li>
+            
+                <button class="botao selecionado">
+                    <img src="./inter/src/imagens/inicio.png" alt="">
+                </button>
+            
+            </li>
+
+            <li>
+            
+                <button class="botao">
+                    
+                    <img src="./inter/src/imagens/trodastro-export.png" alt="entradar">
+                    
+                </button>
+            
+            </li>
+
+            <li>
+            
+                <button class="botao">
+                    
+                    <img src="./inter/src/imagens/trodastro.png" alt="">
+                
+                </button>
+            
+            </li>
+
+            <li>
+                <button class="botao">
+                    
+                    <img src="./inter/src/imagens/gestao.png" alt="">
+
+                </button>
+            </li>
+
+            <li>
+                <button class="botao">
+                    <img src="./inter/src/imagens/produtos.png" alt="">
+                </button>
+            </li>
+            
+        </ul>
+
+        <script src="./inter/src/js/index.js"></script>
+        <script src="./inter/src/js/conexao.js"></script>
+
+        <!-- <script>
+            // Dados que você deseja inserir na tabela
+            var dados = 
+            [
+                { nome: "João", idade: 30, cidade: "São Paulo" },
+                { nome: "Maria", idade: 25, cidade: "Rio de Janeiro" },
+                { nome: "Carlos", idade: 40, cidade: "Curitiba" }
+            ];
+                
+            // Referência à tabela
+            var tabela = document.getElementById("produto");
+                
+            // Loop para inserir os dados na tabela
+            for (var i = 0; i < dados.length; i++) 
+            {
+                var row = tabela.insertRow(i + 1); // Inserir uma nova linha após o cabeçalho
+                var cellNome = row.insertCell(0);
+                var cellIdade = row.insertCell(1);
+                var cellCidade = row.insertCell(2);
+                cellNome.innerHTML = dados[i].nome;
+                cellIdade.innerHTML = dados[i].idade;
+                cellCidade.innerHTML = dados[i].cidade;
+            }
+        </script> -->
+
+    </body>
+
+</html>
